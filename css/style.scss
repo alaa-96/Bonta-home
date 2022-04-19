@@ -1,0 +1,320 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+header {
+  width: 70%;
+  height: 15vh;
+  margin-top: 6vh !important;
+  margin: auto;
+  margin-bottom: 2vh;
+  color: black;
+}
+
+h1,
+h3,
+h5 {
+  color: white;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+}
+.logo img {
+  width: 18vw;
+  //   height: 15.8vh;
+}
+
+p {
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+header a,
+.nav-item {
+  color: black !important;
+  //   text-decoration: none;
+  text-transform: uppercase;
+  margin: 0.1rem;
+}
+
+.nav-item:hover {
+  text-decoration: underline wavy #000000 2px;
+  //   text-decoration-line: underline;
+  //   text-decoration-style: wavy;
+}
+
+.icon,
+.wa {
+  height: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.hamburger,
+.close {
+  display: none;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  top: 6%;
+  right: 15%;
+  font-size: large;
+}
+
+.close {
+  z-index: 3;
+  //   position: fixed;
+  //   right: 5%;
+  //   top: 3%;
+}
+
+.active {
+  height: 60vh;
+  width: 50vw;
+  flex-direction: column !important;
+  align-items: center;
+  //   position: fixed;
+  top: 12%;
+  right: 15%;
+  z-index: 2;
+  position: fixed;
+  background-color: #1a1a1a;
+  padding-top: 6%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.active .nav-item {
+  display: block !important;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  top: -3.5%;
+  right: 0%;
+  margin-left: -15px;
+  width: 0px;
+  height: 0px;
+  margin: 0px auto;
+  border-left: 25px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 15px solid #1a1a1a;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.upper-waves {
+  background: url('../imgs/Path\ 2815.svg') no-repeat;
+  margin-top: -10px;
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.lower-waves {
+  background: url('../imgs/Path\ 2821.svg') no-repeat;
+  margin-top: -35px;
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+}
+
+.sections {
+  height: 70vh;
+  width: 100%;
+}
+
+.luxury {
+  background: linear-gradient(
+      90deg,
+      rgba(4, 4, 8, 0.842) 0%,
+      rgba(22, 22, 24, 0.603) 30%,
+      rgba(63, 67, 68, 0.295) 100%
+    ),
+    url('../imgs/NoPath.svg') center/cover no-repeat;
+
+  padding-top: 10%;
+}
+
+.luxury-waves {
+  //   width: 20%;
+  height: 30%;
+  margin: 2% 5vw auto 0%;
+}
+
+.luxury-txt {
+  width: 40%;
+}
+
+.welcome {
+  width: 60%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.welcome h3,
+.choose-us h5 {
+  color: black;
+}
+.welcome-section {
+  width: 50%;
+}
+
+.welcome-img {
+  background: url('../imgs/Harris\ 2021\ Catalog-Image-068.svg') center/cover
+    no-repeat;
+  height: 60%;
+  width: 25vw;
+}
+
+.welcome-img-waves {
+  height: 6vh;
+  position: relative;
+  margin-left: -20px;
+  margin-top: 30px;
+}
+
+.our-yachts {
+  background: linear-gradient(rgba(4, 4, 8, 0.842) 0%),
+    url('../imgs/NoPath\ -\ Copy\ \(28\).svg') center/cover no-repeat;
+  text-align: center;
+  padding-top: 3rem;
+  height: 47vh;
+}
+.our-yachts-waves {
+  position: absolute;
+  right: 0%;
+  height: 15%;
+}
+
+.cards {
+  position: relative;
+  right: -10%;
+  margin-top: -10rem;
+}
+
+.col {
+  width: 25rem;
+  padding: 0%;
+}
+
+.card {
+  //   width: 23rem;
+  height: 16rem;
+  //   margin: 0.5rem;
+  margin: 0.3rem;
+}
+
+.harris {
+  background: url('../imgs/NoPath - Copy (21).svg') center/cover no-repeat;
+}
+
+.searay210 {
+  background: url('../imgs/NoPath\ -\ Copy\ \(22\).svg') center/cover no-repeat;
+}
+
+.searay185 {
+  background: url('../imgs/NoPath - Copy (19).svg') center/cover no-repeat;
+}
+
+.rinker {
+  background: url('../imgs/NoPath - Copy (20).svg') center/cover no-repeat;
+}
+
+// .card-body {
+//   width: 30%;
+//   background: none;
+// }
+
+.card-title {
+  margin: 1rem 1rem;
+}
+
+.card-text {
+  //   height: 5rem;
+  width: 60%;
+  margin-left: 0%;
+  background: white;
+  position: absolute;
+  bottom: 10%;
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+.searay210 .card-text {
+  background: #000000;
+  color: white;
+}
+
+.card-icon {
+  width: 2rem;
+  height: 1.5rem;
+  background: #e5e5e5;
+  text-align: center;
+}
+
+.card-icon img {
+  width: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.searay210-icon {
+  background: #1a1a1a;
+}
+.users-icon img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+// .our-yachts-lower-waves {
+//   margin-top: 10%;
+// }
+
+.empty-section {
+  height: 25vh;
+}
+.choose-us {
+  background: #f2f2f2;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.choose-us-card {
+  height: 3rem;
+  width: 3rem;
+  background: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-item {
+    display: none !important;
+  }
+  .hamburger {
+    display: block;
+    z-index: 3;
+  }
+}
