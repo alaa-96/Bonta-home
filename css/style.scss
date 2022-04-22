@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Roboto:wght@100;300;400;500&display=swap');
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -13,7 +12,6 @@ body {
   padding: 0%;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  // font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -31,15 +29,7 @@ h3,
 h5 {
   color: white;
 }
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// .luxury-txt p {
-//   text-transform: uppercase;
-// }
+
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -48,7 +38,6 @@ h1 {
 
 p {
   font-size: 0.7rem;
-  // font-weight: lighter;
   text-transform: none;
   line-height: 1.5rem;
 }
@@ -57,6 +46,7 @@ header a {
   color: black !important;
   margin: 0.1rem;
 }
+
 a {
   text-decoration: none;
 }
@@ -71,11 +61,11 @@ footer {
 
 footer p {
   font-size: 0.5rem;
+  margin-bottom: 0%;
 }
 
 .logo img {
   width: 18vw;
-  //   height: 15.8vh;
 }
 
 .nav-item,
@@ -89,31 +79,14 @@ footer p {
   background-size: 3em 20%;
 }
 
-// .fa-brands,
-// .icon {
-//   height: 0.8rem;
-//   margin-right: 0.5rem;
-//   font-size: 14px;
-//   font-weight: 500;
-// }
-
 .header-icons {
-  // height: 0.8rem;
   margin-right: 0.5rem;
-  // font-size: 14px;
-  // font-weight: 500;
 }
 
 .tel {
   font-weight: normal;
   margin-right: 0.5rem;
 }
-
-// .wa {
-//   margin-right: 0.5rem;
-//   // font-size: 14px;
-//   font-weight: 500;
-// }
 
 .fa-brands:hover,
 .tel:hover {
@@ -122,11 +95,9 @@ footer p {
 
 .instagram {
   border-right: 2px solid #74727238;
-  // height: 100%;
   position: relative;
   padding-right: 0.5rem;
   margin-right: 0.5rem;
-  // left: 10%;
 }
 
 .lang {
@@ -146,9 +117,6 @@ footer p {
 
 .close {
   z-index: 3;
-  //   position: fixed;
-  //   right: 5%;
-  //   top: 3%;
 }
 
 .fixed-position {
@@ -163,7 +131,6 @@ footer p {
   width: 70vw;
   flex-direction: column !important;
   align-items: center;
-  //   position: fixed;
   top: 0%;
   left: 0%;
   z-index: 2;
@@ -172,7 +139,6 @@ footer p {
   padding-top: 6%;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  // border-radius: 9px;
   left: 0;
   -webkit-transition: left 0.3s ease-in;
   -o-transition: left 0.3s ease-in;
@@ -207,16 +173,11 @@ footer p {
   border-bottom: none;
 }
 
-// .hamburger-nav {
-//   background-color: #252d35;
-//   height: 50vh;
-//   width: 100vw;
-// }
-
 .lang-container .dropdown .btn {
   position: relative;
   top: -10%;
 }
+
 .nav-item .dropdown .btn {
   position: relative;
   top: 10%;
@@ -224,7 +185,6 @@ footer p {
 
 .upper-waves,
 .lower-waves {
-  // margin-right: -1px;
   width: 100%;
   position: absolute;
 }
@@ -238,7 +198,7 @@ footer p {
 
 .lower-waves {
   background: url('../imgs/Path\ 2821.svg') center/cover no-repeat;
-  margin-top: -40px;
+  margin-top: -35px;
   height: 6vh;
 }
 
@@ -260,7 +220,6 @@ footer p {
 }
 
 .luxury-waves {
-  //   width: 20%;
   height: 30%;
   margin: 2% 5vw auto 0%;
 }
@@ -277,7 +236,6 @@ footer p {
   color: white;
   font-size: 14px;
   padding-bottom: 3rem;
-  // font-family: 'Montserrat', sans-serif;
 }
 
 .explore:hover {
@@ -298,24 +256,20 @@ footer p {
 .keep-updated h5 {
   color: black;
 }
-// .welcome-section {
-//   width: 50%;
-// }
 
 .welcome-text {
   width: 45%;
 }
+
 .p-heading {
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
-  // font-family: 'Oswald', sans-serif;
 }
 
 .heading-img {
   height: 0.9rem;
   width: 2rem;
-  // padding-right: 0.5rem;
   margin-bottom: 0.3rem;
 }
 
@@ -346,10 +300,10 @@ footer p {
   padding-top: 5rem;
   height: 55vh;
 }
+
 .our-yachts-waves {
   position: absolute;
   right: 0%;
-  // margin-top: 3rem;
   height: 15%;
 }
 
@@ -360,6 +314,7 @@ footer p {
 .cards-grid-container {
   grid-template-columns: auto auto;
 }
+
 .cards-grid-item {
   padding: 1px;
 }
@@ -373,15 +328,8 @@ footer p {
   height: auto;
 }
 
-// .cards .col {
-//   width: 25rem;
-//   padding: 0%;
-// }
-
 .card {
-  //   width: 23rem;
   height: 16rem;
-  //   margin: 0.5rem;
   margin: 0.3rem;
   border-radius: 0%;
 }
@@ -402,24 +350,16 @@ footer p {
   background: url('../imgs/NoPath - Copy (20).svg') center/cover no-repeat;
 }
 
-// .card-body {
-//   width: 30%;
-//   background: none;
-// }
-
 .card-title {
   margin: 1rem;
 }
 
 .card-text {
-  //   height: 5rem;
   width: 60%;
-  // margin-left: 0%;
   background: white;
   position: absolute;
   bottom: 6%;
   margin-left: 1rem;
-
   padding: 0.5rem;
 }
 
@@ -430,39 +370,37 @@ footer p {
 
 .card-icon {
   width: 2rem;
-  height: 1.5rem;
+  height: 2rem;
   background: #e5e5e5;
   text-align: center;
 }
 
 .card-icon img {
-  width: 1rem;
-  margin-bottom: 0.5rem;
+  width: 1.3rem;
+  // margin-bottom: 0.5rem;
 }
 
 .searay210-icon {
   background: #1a1a1a;
 }
+
 .users-icon img {
   width: 0.8rem;
   height: 0.8rem;
   margin-bottom: 0.3rem;
 }
 
-// .our-yachts-lower-waves {
-//   margin-top: 10%;
-// }
-
 .empty-section {
   height: 25vh;
-  // background: black;
 }
+
 .choose-us {
   background: #f2f2f2;
-  padding-top: 3rem;
-  // padding-bottom: 5rem;
+  // padding-top: 3rem;
   text-align: center;
   padding-top: 5rem;
+  padding-bottom: 4rem;
+  height: auto;
 }
 
 .choose-us-card {
@@ -496,10 +434,8 @@ footer p {
   text-transform: uppercase;
   font-size: 12px;
   border: none;
-  // width: 7rem;
   height: 2.5rem;
   text-align: center;
-  // margin-top: 1rem;
 }
 
 .fa-brands {
@@ -518,22 +454,16 @@ footer p {
   width: 20vw;
 }
 
+.subscribe-btn {
+  margin-top: -0.3rem;
+}
+
 .footer-logo {
   height: 2.5rem;
-  // margin-right: 4rem;
 }
 
 .footer-grid-container {
   grid-template-columns: auto auto;
-}
-
-// .contact-info .row {
-//   margin-left: 0rem;
-//   // width: 30%;
-// }
-
-.contact-info .col {
-  // width: 15rem;
 }
 
 @media screen and (min-width: 1400px) {
@@ -555,20 +485,11 @@ footer p {
   .p-heading {
     font-size: 1.3rem;
   }
-
-  // .dropdown-img {
-  //   width: 0.5rem;
-  //   padding-top: 1rem;
-  // }
-  // .nav-item:hover {
-  //   // background: url('../imgs/Path\ 2812.svg') no-repeat;
-  //   background-position: 0.5em 2.2em;
-  //   background-size: 3em 30%;
-  // }
   .explore {
     font-size: 1.2rem;
   }
 }
+
 @media screen and (max-width: 1140px) {
   p {
     font-size: 0.7rem;
@@ -586,26 +507,28 @@ footer p {
   .welcome-img {
     width: 35vw;
   }
+  .lower-waves {
+    margin-top: -25px;
+  }
 }
+
 @media screen and (max-width: 1024px) {
   footer {
     padding-top: 2rem;
   }
-  // .welcome {
-  //   margin-bottom: 3rem;
-  // }
   .lower-waves {
     margin-top: -30px;
   }
+  .choose-us {
+    padding-bottom: 3rem;
+    height: auto;
+  }
 }
+
 @media screen and (max-width: 991px) {
   header {
     width: 80%;
   }
-
-  // .cards-grid-item p {
-  //   font-size: 0.7rem;
-  // }
   .cards-grid-container {
     grid-template-columns: auto;
     position: relative;
@@ -643,6 +566,10 @@ footer p {
   .our-yachts-waves {
     height: 15%;
   }
+  .upper-waves,
+  .lower-waves {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -659,6 +586,9 @@ footer p {
   footer {
     padding-top: 0%;
   }
+  header a {
+    color: #dde8f0 !important;
+  }
   .logo img {
     height: 10vh;
     width: 50vw;
@@ -668,31 +598,26 @@ footer p {
   .upper {
     display: none !important;
   }
-
   .nav-item {
     display: none !important;
   }
-
   .nav-item:hover {
-    background-position: 9.5em 3em;
+    background-position: 11.5em 3em;
     background-size: 3em 20%;
   }
   .hamburger {
     display: block;
     z-index: 3;
   }
-
   .luxury-waves {
     width: 5rem;
-    // height: 5rem;
-    margin: 2rem 2rem 3rem -5px;
+    margin: 2rem 2rem 3rem -10px;
   }
   .luxury {
     height: 50vh;
     background-position: 0%;
     background-size: cover;
   }
-
   .welcome {
     flex-direction: column !important;
     height: auto;
@@ -700,26 +625,18 @@ footer p {
   .welcome-text {
     width: 100%;
   }
-
   .p-heading {
     font-size: 1rem;
   }
-  .upper-waves,
-  .lower-waves {
-    display: none;
-  }
-
   .welcome-img {
     margin-top: 3rem;
     position: relative;
     left: 50%;
     display: none;
   }
-
   .our-yachts {
     padding-top: 3rem;
   }
-
   .our-yachts-waves {
     width: 5rem;
     margin-top: -4rem;
@@ -731,7 +648,6 @@ footer p {
     right: 0%;
     margin-top: -12rem;
   }
-
   .choose-us {
     height: auto;
   }
@@ -745,7 +661,6 @@ footer p {
     height: 40vh;
     margin: auto;
   }
-
   .keep-updated {
     flex-direction: column !important;
     height: auto;
@@ -754,13 +669,6 @@ footer p {
   .contact-form {
     margin: auto;
   }
-
-  // .upper-waves {
-  //   margin-top: -18.4px;
-  // }
-  // .lower-waves {
-  //   margin-top: -20.5px;
-  // }
 }
 
 @media screen and (max-width: 520px) {
@@ -770,16 +678,12 @@ footer p {
 }
 
 @media screen and (max-width: 375px) {
-  h1 {
-    // font-size: 2rem;
-  }
   p {
     font-size: 0.8rem;
   }
   .luxury {
     padding-top: 5rem;
   }
-
   .p-heading {
     font-size: 1.1rem;
   }
@@ -796,13 +700,3 @@ footer p {
     height: 30vh;
   }
 }
-
-// @media screen and (max-width: 991.98px) {
-//   .nav-item {
-//     display: none !important;
-//   }
-//   .hamburger {
-//     display: block;
-//     z-index: 3;
-//   }
-// }

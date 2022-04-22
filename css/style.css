@@ -61,6 +61,7 @@ footer {
 
 footer p {
   font-size: 0.5rem;
+  margin-bottom: 0%;
 }
 
 .logo img {
@@ -201,7 +202,7 @@ footer p {
 
 .lower-waves {
   background: url("../imgs/Path 2821.svg") center/cover no-repeat;
-  margin-top: -40px;
+  margin-top: -35px;
   height: 6vh;
 }
 
@@ -370,14 +371,13 @@ footer p {
 
 .card-icon {
   width: 2rem;
-  height: 1.5rem;
+  height: 2rem;
   background: #e5e5e5;
   text-align: center;
 }
 
 .card-icon img {
-  width: 1rem;
-  margin-bottom: 0.5rem;
+  width: 1.3rem;
 }
 
 .searay210-icon {
@@ -396,9 +396,10 @@ footer p {
 
 .choose-us {
   background: #f2f2f2;
-  padding-top: 3rem;
   text-align: center;
   padding-top: 5rem;
+  padding-bottom: 4rem;
+  height: auto;
 }
 
 .choose-us-card {
@@ -452,6 +453,10 @@ footer p {
   width: 20vw;
 }
 
+.subscribe-btn {
+  margin-top: -0.3rem;
+}
+
 .footer-logo {
   height: 2.5rem;
 }
@@ -502,6 +507,9 @@ footer p {
   .welcome-img {
     width: 35vw;
   }
+  .lower-waves {
+    margin-top: -25px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -510,6 +518,10 @@ footer p {
   }
   .lower-waves {
     margin-top: -30px;
+  }
+  .choose-us {
+    padding-bottom: 3rem;
+    height: auto;
   }
 }
 
@@ -555,6 +567,10 @@ footer p {
   .our-yachts-waves {
     height: 15%;
   }
+  .upper-waves,
+  .lower-waves {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -571,6 +587,9 @@ footer p {
   footer {
     padding-top: 0%;
   }
+  header a {
+    color: #dde8f0 !important;
+  }
   .logo img {
     height: 10vh;
     width: 50vw;
@@ -584,7 +603,7 @@ footer p {
     display: none !important;
   }
   .nav-item:hover {
-    background-position: 9.5em 3em;
+    background-position: 11.5em 3em;
     background-size: 3em 20%;
   }
   .hamburger {
@@ -593,7 +612,7 @@ footer p {
   }
   .luxury-waves {
     width: 5rem;
-    margin: 2rem 2rem 3rem -5px;
+    margin: 2rem 2rem 3rem -10px;
   }
   .luxury {
     height: 50vh;
@@ -612,10 +631,6 @@ footer p {
   }
   .p-heading {
     font-size: 1rem;
-  }
-  .upper-waves,
-  .lower-waves {
-    display: none;
   }
   .welcome-img {
     margin-top: 3rem;
