@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Roboto:wght@100;300;400;500&display=swap");
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -8,8 +10,9 @@
 body {
   margin: 0px;
   padding: 0%;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header {
@@ -27,45 +30,77 @@ h5 {
   color: white;
 }
 
-h1,
-h2,
-h3,
-h5,
-h6 {
-  text-transform: uppercase;
-}
-
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 0.1px;
+}
+
+p {
+  font-size: 0.7rem;
+  text-transform: none;
+  line-height: 1.5rem;
+}
+
+header a {
+  color: black !important;
+  margin: 0.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background: #000;
+  height: 30vh;
+  padding-top: 4rem;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  font-size: 0.5rem;
 }
 
 .logo img {
   width: 18vw;
 }
 
-p {
-  font-size: 10px;
-  font-weight: lighter;
-}
-
-header a,
-.nav-item {
-  color: black !important;
-  text-transform: uppercase;
-  margin: 0.1rem;
+.nav-item,
+.explore {
+  font-weight: 300;
 }
 
 .nav-item:hover {
-  -webkit-text-decoration: underline wavy #000000 2px;
-          text-decoration: underline wavy #000000 2px;
+  background: url("../imgs/Path 2812.svg") no-repeat;
+  background-position: 1em 3em;
+  background-size: 3em 20%;
 }
 
-.icon,
-.wa {
-  height: 0.8rem;
+.header-icons {
   margin-right: 0.5rem;
+}
+
+.tel {
+  font-weight: normal;
+  margin-right: 0.5rem;
+}
+
+.fa-brands:hover,
+.tel:hover {
+  color: #707070;
+}
+
+.instagram {
+  border-right: 2px solid #74727238;
+  position: relative;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.lang {
+  height: 0.8rem;
 }
 
 .hamburger,
@@ -75,17 +110,24 @@ header a,
   cursor: pointer;
   position: absolute;
   top: 6%;
-  right: 15%;
-  font-size: large;
+  right: 90%;
+  font-size: 25px;
 }
 
 .close {
   z-index: 3;
 }
 
+.fixed-position {
+  position: fixed;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .active {
-  height: 60vh;
-  width: 50vw;
+  height: 100vh;
+  width: 70vw;
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -93,56 +135,74 @@ header a,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 12%;
-  right: 15%;
+  top: 0%;
+  left: 0%;
   z-index: 2;
   position: fixed;
-  background-color: #1a1a1a;
+  background-color: #082032;
   padding-top: 6%;
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.active .nav-item {
-  display: block !important;
-  padding-top: 3rem;
-  width: 100%;
+  left: 0;
+  -webkit-transition: left 0.3s ease-in;
+  transition: left 0.3s ease-in;
 }
 
 .active::before {
   content: '';
   position: absolute;
-  top: -3.5%;
+  top: -2.5%;
   right: 0%;
   margin-left: -15px;
   width: 0px;
   height: 0px;
   margin: 0px auto;
   border-left: 25px solid transparent;
-  border-right: 0px solid transparent;
-  border-bottom: 15px solid #1a1a1a;
+  border-right: 25px solid transparent;
+  border-bottom: 15px solid #082032;
 }
 
-.dropdown {
-  display: inline-block;
+.active .nav-item {
+  display: block !important;
+  padding-top: 5rem;
+  height: 12%;
+  width: 70%;
+  border-bottom: 1px solid #dde8f0;
+  border-bottom-width: 70%;
+}
+
+.active .nav-item:last-child {
+  border-bottom: none;
+}
+
+.lang-container .dropdown .btn {
+  position: relative;
+  top: -10%;
+}
+
+.nav-item .dropdown .btn {
+  position: relative;
+  top: 10%;
+}
+
+.upper-waves,
+.lower-waves {
+  width: 100%;
+  position: absolute;
 }
 
 .upper-waves {
-  background: url("../imgs/Path 2815.svg") no-repeat;
+  background: url("../imgs/Path 2815.svg") center/cover no-repeat;
   margin-top: -10px;
-  height: 10vh;
-  width: 100%;
-  position: absolute;
+  height: 9vh;
   z-index: 1;
 }
 
 .lower-waves {
-  background: url("../imgs/Path 2821.svg") no-repeat;
-  margin-top: -35px;
-  height: 10vh;
-  width: 100%;
-  position: absolute;
+  background: url("../imgs/Path 2821.svg") center/cover no-repeat;
+  margin-top: -40px;
+  height: 6vh;
 }
 
 .sections {
@@ -153,6 +213,7 @@ header a,
 .luxury {
   background: -webkit-gradient(linear, left top, right top, from(rgba(4, 4, 8, 0.842)), color-stop(30%, rgba(22, 22, 24, 0.603)), to(rgba(63, 67, 68, 0.295))), url("../imgs/NoPath.svg") center/cover no-repeat;
   background: linear-gradient(90deg, rgba(4, 4, 8, 0.842) 0%, rgba(22, 22, 24, 0.603) 30%, rgba(63, 67, 68, 0.295) 100%), url("../imgs/NoPath.svg") center/cover no-repeat;
+  background-position: left;
   padding-top: 10%;
 }
 
@@ -162,22 +223,59 @@ header a,
 }
 
 .luxury-txt {
-  width: 40%;
+  width: 30%;
+  color: white;
+}
+
+.luxury-txt p {
+  font-size: 12px;
+}
+
+.explore {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 3rem;
+}
+
+.explore:hover {
+  background: url("../imgs/Path 2811.svg") no-repeat;
+  background-position: -1em 1.5em;
+  background-size: 70% 7%;
+  color: #dad6d6;
 }
 
 .welcome {
-  width: 60%;
+  width: 60vw;
   margin: auto;
   padding-top: 3rem;
 }
 
 .welcome h3,
-.choose-us h5 {
+.choose-us h5,
+.keep-updated h5 {
   color: black;
 }
 
-.welcome-section {
-  width: 50%;
+.welcome-text {
+  width: 45%;
+}
+
+.p-heading {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.heading-img {
+  height: 0.9rem;
+  width: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.welcome-btn {
+  width: 7rem;
+  height: 2.5rem;
+  margin-top: 1rem;
 }
 
 .welcome-img {
@@ -197,8 +295,8 @@ header a,
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 8, 0.842))), url("../imgs/NoPath - Copy (28).svg") center/cover no-repeat;
   background: linear-gradient(rgba(4, 4, 8, 0.842) 0%), url("../imgs/NoPath - Copy (28).svg") center/cover no-repeat;
   text-align: center;
-  padding-top: 3rem;
-  height: 47vh;
+  padding-top: 5rem;
+  height: 55vh;
 }
 
 .our-yachts-waves {
@@ -207,20 +305,33 @@ header a,
   height: 15%;
 }
 
-.cards {
-  position: relative;
-  right: -10%;
-  margin-top: -10rem;
+.grid-container {
+  display: -ms-grid;
+  display: grid;
 }
 
-.col {
-  width: 25rem;
-  padding: 0%;
+.cards-grid-container {
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.cards-grid-item {
+  padding: 1px;
+}
+
+.cards {
+  position: relative;
+  right: -18%;
+  margin-top: -10rem;
+  padding-bottom: 3rem;
+  max-width: 65vw;
+  height: auto;
 }
 
 .card {
   height: 16rem;
   margin: 0.3rem;
+  border-radius: 0%;
 }
 
 .harris {
@@ -240,15 +351,14 @@ header a,
 }
 
 .card-title {
-  margin: 1rem 1rem;
+  margin: 1rem;
 }
 
 .card-text {
   width: 60%;
-  margin-left: 0%;
   background: white;
   position: absolute;
-  bottom: 10%;
+  bottom: 6%;
   margin-left: 1rem;
   padding: 0.5rem;
 }
@@ -288,21 +398,303 @@ header a,
   background: #f2f2f2;
   padding-top: 3rem;
   text-align: center;
+  padding-top: 5rem;
 }
 
 .choose-us-card {
-  height: 3rem;
-  width: 3rem;
+  height: 43vh;
+  width: 20vw;
   background: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+.choose-us-card-icon {
+  height: 4.5rem;
+  padding-bottom: 1rem;
+}
+
+.keep-updated {
+  height: 25vh;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.contact-form {
+  margin-left: 5vw;
+}
+
+.keep-updated-heading {
+  margin-right: 4vw;
+}
+
+.btn-dark {
+  background: black;
+  border-radius: 0%;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none;
+  height: 2.5rem;
+  text-align: center;
+}
+
+.fa-brands {
+  padding: 6px 0px;
+  font-size: 13px;
+  width: 1.1rem;
+}
+
+.keep-updated-btns,
+.form-control {
+  margin-right: 0.5rem;
+}
+
+.form-control {
+  height: 2.5rem;
+  width: 20vw;
+}
+
+.footer-logo {
+  height: 2.5rem;
+}
+
+.footer-grid-container {
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .luxury-txt p {
+    font-size: 1rem;
+  }
+  .header-icon {
+    font-size: 1rem;
+  }
+  .p-heading {
+    font-size: 1.3rem;
+  }
+  .explore {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  p {
+    font-size: 0.7rem;
+  }
+  footer {
+    padding-top: 2rem;
+  }
+  .cards-grid-item p {
+    font-size: 9px;
+    margin: 0%;
+  }
+  .welcome {
+    width: 80%;
+  }
+  .welcome-img {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding-top: 2rem;
+  }
+  .lower-waves {
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    width: 80%;
+  }
+  .cards-grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    position: relative;
+    right: -10%;
+  }
+  .cards-grid-item {
+    width: 50vw;
+  }
+  .choose-us-card {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 90%;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .luxury {
+    background-position: 20%;
+  }
+  .luxury-waves {
+    height: 20%;
+  }
+  .welcome {
+    width: 100%;
+    padding: 3rem;
+    margin-bottom: 2rem;
+  }
+  .welcome-text {
+    width: 50%;
+  }
+  .our-yachts-waves {
+    height: 15%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    height: 10vh;
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+  footer {
+    padding-top: 0%;
+  }
+  .logo img {
+    height: 10vh;
+    width: 50vw;
+    position: absolute;
+    right: 25%;
+  }
+  .upper {
+    display: none !important;
+  }
   .nav-item {
     display: none !important;
+  }
+  .nav-item:hover {
+    background-position: 9.5em 3em;
+    background-size: 3em 20%;
   }
   .hamburger {
     display: block;
     z-index: 3;
+  }
+  .luxury-waves {
+    width: 5rem;
+    margin: 2rem 2rem 3rem -5px;
+  }
+  .luxury {
+    height: 50vh;
+    background-position: 0%;
+    background-size: cover;
+  }
+  .welcome {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto;
+  }
+  .welcome-text {
+    width: 100%;
+  }
+  .p-heading {
+    font-size: 1rem;
+  }
+  .upper-waves,
+  .lower-waves {
+    display: none;
+  }
+  .welcome-img {
+    margin-top: 3rem;
+    position: relative;
+    left: 50%;
+    display: none;
+  }
+  .our-yachts {
+    padding-top: 3rem;
+  }
+  .our-yachts-waves {
+    width: 5rem;
+    margin-top: -4rem;
+  }
+  .cards-grid-item {
+    width: 90vw;
+  }
+  .cards {
+    right: 0%;
+    margin-top: -12rem;
+  }
+  .choose-us {
+    height: auto;
+  }
+  .choose-us-cards {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 3rem;
+  }
+  .choose-us-card {
+    width: 60%;
+    height: 40vh;
+    margin: auto;
+  }
+  .keep-updated {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .contact-form {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .luxury {
+    background-position: 15%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 0.8rem;
+  }
+  .luxury {
+    padding-top: 5rem;
+  }
+  .p-heading {
+    font-size: 1.1rem;
+  }
+  .our-yachts-waves {
+    width: 4.8rem;
+  }
+  .cards {
+    margin-top: -10rem;
+  }
+  .card-text {
+    width: auto;
+  }
+  .choose-us-card {
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
