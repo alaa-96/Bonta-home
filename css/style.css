@@ -476,6 +476,9 @@ footer p {
   p {
     font-size: 1rem;
   }
+  footer p {
+    font-size: 0.8rem;
+  }
   .luxury-txt p {
     font-size: 1rem;
   }
@@ -487,6 +490,19 @@ footer p {
   }
   .explore {
     font-size: 1.2rem;
+  }
+  .nav-item:hover {
+    background-position: 1em 2.5em;
+  }
+  .welcome {
+    height: 50vh;
+  }
+  .cards {
+    margin-top: -18rem;
+  }
+  .choose-us {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -627,9 +643,9 @@ footer p {
   .nav-item {
     display: none !important;
   }
-  .nav-item:hover {
-    background-position: 11.5em 3em;
-    background-size: 3em 20%;
+  .nav-item:hover,
+  .explore:hover {
+    background: none;
   }
   .hamburger {
     display: block;
