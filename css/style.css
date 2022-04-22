@@ -117,6 +117,7 @@ footer p {
 
 .close {
   z-index: 3;
+  color: white;
 }
 
 .fixed-position {
@@ -609,6 +610,19 @@ footer p {
   .hamburger {
     display: block;
     z-index: 3;
+  }
+  .fa-caret-down {
+    color: white;
+  }
+  .nav-item .dropdown .btn {
+    top: 0%;
+    margin-left: 0.5rem;
+  }
+  .nav-link {
+    padding-top: 1.5rem;
+  }
+  .fleet {
+    padding-top: 1.5rem !important;
   }
   .luxury-waves {
     width: 5rem;
