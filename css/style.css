@@ -20,13 +20,13 @@ header {
   margin-top: 6vh !important;
   margin: auto;
   margin-bottom: 2vh;
-  color: black;
+  color: #000;
 }
 
 h1,
 h3,
 h5 {
-  color: white;
+  color: #ffffff;
 }
 
 h1 {
@@ -42,7 +42,7 @@ p {
 }
 
 header a {
-  color: black !important;
+  color: #000 !important;
   margin: 0.1rem;
 }
 
@@ -54,8 +54,10 @@ footer {
   background: #000;
   height: 20vh;
   padding-top: 4rem;
+  padding-bottom: 2rem;
   text-align: center;
-  color: white;
+  color: #ffffff;
+  height: auto;
 }
 
 footer p {
@@ -116,7 +118,7 @@ footer p {
 
 .close {
   z-index: 3;
-  color: white;
+  color: #ffffff;
 }
 
 .fixed-position {
@@ -150,20 +152,6 @@ footer p {
   transition: left 0.3s ease-in;
 }
 
-.active::before {
-  content: '';
-  position: absolute;
-  top: -2.5%;
-  right: 0%;
-  margin-left: -15px;
-  width: 0px;
-  height: 0px;
-  margin: 0px auto;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 15px solid #082032;
-}
-
 .active .nav-item {
   display: block !important;
   padding-top: 5rem;
@@ -191,19 +179,19 @@ footer p {
 .lower-waves {
   width: 100%;
   position: absolute;
+  margin: 0%;
+  padding: 0%;
 }
 
-.upper-waves {
-  background: url("../imgs/Path 2815.svg") center/cover no-repeat;
-  margin-top: -10px;
-  height: 9vh;
-  z-index: 1;
+.upper-waves img {
+  top: 0%;
+  width: 100%;
+  margin-top: -1px;
 }
 
-.lower-waves {
-  background: url("../imgs/Path 2821.svg") center/cover no-repeat;
-  margin-top: -35px;
-  height: 6vh;
+.lower-waves img {
+  width: 100%;
+  margin-top: -40px;
 }
 
 .sections {
@@ -225,7 +213,7 @@ footer p {
 
 .luxury-txt {
   width: 30%;
-  color: white;
+  color: #ffffff;
 }
 
 .luxury-txt p {
@@ -233,7 +221,7 @@ footer p {
 }
 
 .explore {
-  color: white;
+  color: #ffffff;
   font-size: 14px;
   padding-bottom: 3rem;
 }
@@ -242,7 +230,7 @@ footer p {
   background: url("../imgs/Path 2811.svg") no-repeat;
   background-position: -1em 1.5em;
   background-size: 70% 7%;
-  color: #dad6d6;
+  color: #707070;
 }
 
 .welcome {
@@ -254,7 +242,7 @@ footer p {
 .welcome h3,
 .choose-us h5,
 .keep-updated h5 {
-  color: black;
+  color: #000;
 }
 
 .welcome-text {
@@ -357,7 +345,7 @@ footer p {
 
 .card-text {
   width: auto;
-  background: white;
+  background: #ffffff;
   position: absolute;
   bottom: 6%;
   margin-left: 1rem;
@@ -366,7 +354,7 @@ footer p {
 
 .searay210 .card-text {
   background: #000000;
-  color: white;
+  color: #ffffff;
 }
 
 .card-icon {
@@ -428,7 +416,7 @@ footer p {
 }
 
 .btn-dark {
-  background: black;
+  background: #000;
   border-radius: 0%;
   text-transform: uppercase;
   font-size: 12px;
@@ -464,6 +452,15 @@ footer p {
 .footer-grid-container {
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+}
+
+@media screen and (min-width: 1366px) {
+  .upper-waves {
+    margin-top: -2px;
+  }
+  .lower-waves {
+    margin-top: -3px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -515,7 +512,7 @@ footer p {
   }
   p,
   .header-icon {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 2rem;
   }
   h1 {
@@ -536,14 +533,17 @@ footer p {
   .nav-item:hover {
     background-position: 2em 2.4em;
   }
+  .upper-waves {
+    margin-top: -5px;
+  }
+  .lower-waves {
+    margin-top: -14px;
+  }
   .luxury-txt p {
     font-size: 2rem;
   }
   .explore {
     font-size: 2rem;
-  }
-  .lower-waves {
-    margin-top: -50px;
   }
   .p-heading {
     font-size: 2rem;
@@ -568,7 +568,7 @@ footer p {
     padding-top: 10rem;
   }
   .cards {
-    margin-top: -20rem;
+    margin-top: -15rem;
   }
   .card {
     height: 30vh;
@@ -584,7 +584,7 @@ footer p {
     height: 60vh;
   }
   .cards {
-    margin-top: -12rem;
+    margin-top: -20rem;
   }
 }
 
@@ -605,9 +605,6 @@ footer p {
   .welcome-img {
     width: 35vw;
   }
-  .lower-waves {
-    margin-top: -25px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -621,31 +618,34 @@ footer p {
     padding-top: 2rem;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .luxury-waves {
-    height: 25%;
+    height: 20%;
+  }
+  .luxury {
+    padding-top: 5rem;
   }
   .luxury-txt {
-    width: 40%;
-  }
-  .luxury-txt p {
-    font-size: 1.5rem;
+    width: 60%;
   }
   .explore {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-  .card-text {
-    width: auto;
+  .upper-waves {
+    margin-top: -6px;
+  }
+  .cards {
+    margin-top: -10rem;
+  }
+  .footer-upper-waves {
+    margin-top: -3px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .cards-grid-container {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    position: relative;
-    right: -10%;
+  p {
+    font-size: 1rem;
   }
   .cards-grid-item {
     width: 50vw;
@@ -661,6 +661,45 @@ footer p {
   .lower-waves {
     display: none;
   }
+  .welcome-img {
+    display: none;
+  }
+  .welcome-text {
+    width: 70%;
+  }
+  .p-heading {
+    font-size: 2rem;
+  }
+  .welcome-btn {
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.1rem;
+  }
+  .welcome {
+    padding-top: 10rem;
+  }
+  .our-yachts-waves {
+    height: 10%;
+  }
+  .card-text {
+    width: auto;
+  }
+  .cards-grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    position: relative;
+    right: -10%;
+  }
+  .cards {
+    margin-top: -35rem;
+    width: 50vw;
+  }
+  .choose-us-card {
+    height: 25vh;
+  }
+  .keep-updated {
+    padding-top: 10rem;
+  }
   .luxury {
     background-position: 20%;
     padding-top: 15rem;
@@ -668,13 +707,12 @@ footer p {
   .luxury-txt {
     width: 60%;
   }
+  .p-heading {
+    font-size: 1.5rem;
+  }
   .welcome {
     width: 100%;
-    padding: 3rem;
-    padding-top: 10rem;
-  }
-  .welcome-text {
-    width: 50%;
+    padding: 4rem;
   }
   .our-yachts-waves {
     height: 10%;
@@ -684,6 +722,45 @@ footer p {
   }
   .choose-us-card {
     height: 20vh;
+  }
+  .keep-updated {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  .contact-form {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 8rem;
+  }
+  .keep-updated-btns {
+    margin-top: 1rem;
+  }
+  .form-control {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .welcome {
+    height: auto;
+  }
+  .welcome-btn {
+    height: 2rem;
+    width: 5rem;
+    font-size: 0.6rem;
+  }
+  .contact-form {
+    margin-left: 4rem;
   }
 }
 
@@ -737,7 +814,7 @@ footer p {
     z-index: 3;
   }
   .fa-caret-down {
-    color: white;
+    color: #ffffff;
   }
   .nav-item .dropdown .btn {
     top: 0%;
@@ -812,30 +889,6 @@ footer p {
     height: 40vh;
     margin: auto;
   }
-  .keep-updated {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    height: auto;
-    padding-bottom: 3rem;
-  }
-  .contact-form {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-left: 4.5rem;
-  }
-  .keep-updated-btns {
-    margin-top: 1rem;
-  }
-  .form-control {
-    width: 50vw;
-  }
   .footer-logo {
     margin-bottom: 1rem;
   }
@@ -878,8 +931,8 @@ footer p {
     padding-top: 5rem;
   }
   .cards {
-    right: 2%;
-    margin-top: -18rem;
+    right: 0%;
+    margin-top: -22rem;
   }
   .choose-us-card {
     height: 20vh;
@@ -911,14 +964,55 @@ footer p {
 }
 
 @media screen and (max-width: 320px) {
-  .cards {
-    margin-top: -12rem;
+  p {
+    font-size: 0.4rem;
+    line-height: 1rem;
   }
   form {
     text-align: left;
   }
+  .cards {
+    margin-top: -15rem;
+  }
+  .welcome {
+    padding-left: 1rem;
+  }
+  .welcome-text {
+    width: 100%;
+  }
+  .our-yachts-waves {
+    display: none;
+  }
   .contact-form {
     margin-left: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .luxury p,
+  .explore {
+    font-size: 0.8rem;
+  }
+  .welcome {
+    padding-right: 1rem;
+  }
+  .cards p {
+    font-size: 0.6rem;
+  }
+  .contact-form {
+    margin-left: 1rem;
+  }
+  footer {
+    padding-left: 1rem;
+  }
+  .copyright {
+    padding-left: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

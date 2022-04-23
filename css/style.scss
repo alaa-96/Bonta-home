@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&family=Roboto:wght@100;300;400;500&display=swap');
+@import 'fonts-and-colors';
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -20,13 +21,13 @@ header {
   margin-top: 6vh !important;
   margin: auto;
   margin-bottom: 2vh;
-  color: black;
+  color: $black;
 }
 
 h1,
 h3,
 h5 {
-  color: white;
+  color: $white;
 }
 
 h1 {
@@ -42,7 +43,7 @@ p {
 }
 
 header a {
-  color: black !important;
+  color: $black !important;
   margin: 0.1rem;
 }
 
@@ -54,14 +55,18 @@ footer {
   background: #000;
   height: 20vh;
   padding-top: 4rem;
+  padding-bottom: 2rem;
   text-align: center;
-  color: white;
+  color: $white;
+  height: auto;
 }
 
 footer p {
   font-size: 0.5rem;
   margin-bottom: 0%;
 }
+
+// header
 
 .logo img {
   width: 18vw;
@@ -89,7 +94,7 @@ footer p {
 
 .fa-brands:hover,
 .tel:hover {
-  color: #707070;
+  color: $hover-gray;
 }
 
 .instagram {
@@ -116,7 +121,7 @@ footer p {
 
 .close {
   z-index: 3;
-  color: white;
+  color: $white;
 }
 
 .fixed-position {
@@ -135,7 +140,7 @@ footer p {
   left: 0%;
   z-index: 2;
   position: fixed;
-  background-color: #082032;
+  background-color: $nav-bg;
   padding-top: 6%;
   text-align: center;
   transition: all 0.3s ease-in-out;
@@ -146,26 +151,12 @@ footer p {
   transition: left 0.3s ease-in;
 }
 
-.active::before {
-  content: '';
-  position: absolute;
-  top: -2.5%;
-  right: 0%;
-  margin-left: -15px;
-  width: 0px;
-  height: 0px;
-  margin: 0px auto;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 15px solid #082032;
-}
-
 .active .nav-item {
   display: block !important;
   padding-top: 5rem;
   height: 12%;
   width: 70%;
-  border-bottom: 1px solid #dde8f0;
+  border-bottom: 1px solid $light-gray;
   border-bottom-width: 70%;
 }
 
@@ -183,23 +174,25 @@ footer p {
   top: 10%;
 }
 
+// Main
+
 .upper-waves,
 .lower-waves {
   width: 100%;
   position: absolute;
+  margin: 0%;
+  padding: 0%;
 }
 
-.upper-waves {
-  background: url('../imgs/Path\ 2815.svg') center/cover no-repeat;
-  margin-top: -10px;
-  height: 9vh;
-  z-index: 1;
+.upper-waves img {
+  top: 0%;
+  width: 100%;
+  margin-top: -1px;
 }
 
-.lower-waves {
-  background: url('../imgs/Path\ 2821.svg') center/cover no-repeat;
-  margin-top: -35px;
-  height: 6vh;
+.lower-waves img {
+  width: 100%;
+  margin-top: -40px;
 }
 
 .sections {
@@ -226,14 +219,14 @@ footer p {
 
 .luxury-txt {
   width: 30%;
-  color: white;
+  color: $white;
   p {
     font-size: 12px;
   }
 }
 
 .explore {
-  color: white;
+  color: $white;
   font-size: 14px;
   padding-bottom: 3rem;
 }
@@ -242,7 +235,7 @@ footer p {
   background: url('../imgs/Path\ 2811.svg') no-repeat;
   background-position: -1em 1.5em;
   background-size: 70% 7%;
-  color: #dad6d6;
+  color: $hover-gray;
 }
 
 .welcome {
@@ -254,7 +247,7 @@ footer p {
 .welcome h3,
 .choose-us h5,
 .keep-updated h5 {
-  color: black;
+  color: $black;
 }
 
 .welcome-text {
@@ -356,7 +349,7 @@ footer p {
 
 .card-text {
   width: auto;
-  background: white;
+  background: $white;
   position: absolute;
   bottom: 6%;
   margin-left: 1rem;
@@ -365,13 +358,13 @@ footer p {
 
 .searay210 .card-text {
   background: #000000;
-  color: white;
+  color: $white;
 }
 
 .card-icon {
   width: 2rem;
   height: 2rem;
-  background: #e5e5e5;
+  background: $card-icon-bg;
   text-align: center;
 }
 
@@ -427,7 +420,7 @@ footer p {
 }
 
 .btn-dark {
-  background: black;
+  background: $black;
   border-radius: 0%;
   text-transform: uppercase;
   font-size: 12px;
@@ -456,12 +449,26 @@ footer p {
   margin-top: -0.3rem;
 }
 
+// Footer
+
 .footer-logo {
   height: 2.5rem;
 }
 
 .footer-grid-container {
   grid-template-columns: auto auto;
+}
+
+// Media queries
+
+// Extra Large Screens
+@media screen and (min-width: 1366px) {
+  .upper-waves {
+    margin-top: -2px;
+  }
+  .lower-waves {
+    margin-top: -3px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -513,7 +520,7 @@ footer p {
   }
   p,
   .header-icon {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 2rem;
   }
   h1 {
@@ -523,9 +530,6 @@ footer p {
     font-size: 2rem;
   }
 
-  // .header-icon {
-  //   font-size: 1.5rem;
-  // }
   .lang {
     height: 1.1rem;
   }
@@ -538,16 +542,19 @@ footer p {
   .nav-item:hover {
     background-position: 2em 2.4em;
   }
+  .upper-waves {
+    margin-top: -5px;
+  }
+  .lower-waves {
+    margin-top: -14px;
+  }
   .luxury-txt p {
     font-size: 2rem;
   }
   .explore {
     font-size: 2rem;
-    // margin: 2rem auto;
   }
-  .lower-waves {
-    margin-top: -50px;
-  }
+
   .p-heading {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -571,7 +578,7 @@ footer p {
     padding-top: 10rem;
   }
   .cards {
-    margin-top: -20rem;
+    margin-top: -15rem;
   }
   .card {
     height: 30vh;
@@ -587,9 +594,11 @@ footer p {
     height: 60vh;
   }
   .cards {
-    margin-top: -12rem;
+    margin-top: -20rem;
   }
 }
+
+// Large Screens
 
 @media screen and (max-width: 1140px) {
   p {
@@ -608,11 +617,9 @@ footer p {
   .welcome-img {
     width: 35vw;
   }
-  .lower-waves {
-    margin-top: -25px;
-  }
 }
 
+// Small Screens
 @media screen and (max-width: 1024px) {
   body {
     font-size: 15px;
@@ -624,33 +631,37 @@ footer p {
     padding-top: 2rem;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
+
   .luxury-waves {
-    height: 25%;
+    height: 20%;
+  }
+  .luxury {
+    padding-top: 5rem;
   }
   .luxury-txt {
-    width: 40%;
+    width: 60%;
   }
-  .luxury-txt p {
-    font-size: 1.5rem;
-  }
+
   .explore {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-  // .lower-waves {
-  //   margin-top: -30px;
-  // }
-  .card-text {
-    width: auto;
+  .upper-waves {
+    margin-top: -6px;
+  }
+  .cards {
+    margin-top: -10rem;
+  }
+
+  .footer-upper-waves {
+    margin-top: -3px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .cards-grid-container {
-    grid-template-columns: auto;
-    position: relative;
-    right: -10%;
+  p {
+    font-size: 1rem;
   }
   .cards-grid-item {
     width: 50vw;
@@ -667,7 +678,45 @@ footer p {
   .lower-waves {
     display: none;
   }
+  .welcome-img {
+    display: none;
+  }
+  .welcome-text {
+    width: 70%;
+  }
+  .p-heading {
+    font-size: 2rem;
+  }
+  .welcome-btn {
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.1rem;
+  }
+  .welcome {
+    padding-top: 10rem;
+  }
 
+  .our-yachts-waves {
+    height: 10%;
+  }
+  .card-text {
+    width: auto;
+  }
+  .cards-grid-container {
+    grid-template-columns: auto;
+    position: relative;
+    right: -10%;
+  }
+  .cards {
+    margin-top: -35rem;
+    width: 50vw;
+  }
+  .choose-us-card {
+    height: 25vh;
+  }
+  .keep-updated {
+    padding-top: 10rem;
+  }
   .luxury {
     background-position: 20%;
     padding-top: 15rem;
@@ -677,14 +726,14 @@ footer p {
     width: 60%;
   }
 
+  .p-heading {
+    font-size: 1.5rem;
+  }
   .welcome {
     width: 100%;
-    padding: 3rem;
-    padding-top: 10rem;
+    padding: 4rem;
   }
-  .welcome-text {
-    width: 50%;
-  }
+
   .our-yachts-waves {
     height: 10%;
   }
@@ -694,10 +743,40 @@ footer p {
   .choose-us-card {
     height: 20vh;
   }
+  .keep-updated {
+    flex-direction: column !important;
+    height: auto;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  .contact-form {
+    flex-direction: column-reverse !important;
+    align-items: flex-start;
+    margin-left: 8rem;
+  }
+  .keep-updated-btns {
+    margin-top: 1rem;
+  }
+  .form-control {
+    width: 50vw;
+  }
 }
 
 @media screen and (max-width: 820px) {
+  .welcome {
+    height: auto;
+  }
+  .welcome-btn {
+    height: 2rem;
+    width: 5rem;
+    font-size: 0.6rem;
+  }
+  .contact-form {
+    margin-left: 4rem;
+  }
 }
+
+// iPads and Tablets
 
 @media screen and (max-width: 768px) {
   header {
@@ -726,7 +805,7 @@ footer p {
     width: 50%;
   }
   header a {
-    color: #dde8f0 !important;
+    color: $light-gray !important;
   }
   .logo img {
     height: 10vh;
@@ -751,7 +830,7 @@ footer p {
     z-index: 3;
   }
   .fa-caret-down {
-    color: white;
+    color: $white;
   }
   .nav-item .dropdown .btn {
     top: 0%;
@@ -818,23 +897,7 @@ footer p {
     height: 40vh;
     margin: auto;
   }
-  .keep-updated {
-    flex-direction: column !important;
-    height: auto;
-    padding-bottom: 3rem;
-  }
-  .contact-form {
-    // margin: auto;
-    flex-direction: column-reverse !important;
-    align-items: flex-start;
-    margin-left: 4.5rem;
-  }
-  .keep-updated-btns {
-    margin-top: 1rem;
-  }
-  .form-control {
-    width: 50vw;
-  }
+
   .footer-logo {
     margin-bottom: 1rem;
   }
@@ -869,6 +932,8 @@ footer p {
   }
 }
 
+// Mobile devices
+
 @media screen and (max-width: 414px) {
   .hamburger {
     top: 8%;
@@ -877,8 +942,8 @@ footer p {
     padding-top: 5rem;
   }
   .cards {
-    right: 2%;
-    margin-top: -18rem;
+    right: 0%;
+    margin-top: -22rem;
   }
   .choose-us-card {
     height: 20vh;
@@ -904,22 +969,62 @@ footer p {
   .cards {
     margin-top: -16rem;
   }
-  // .card-text {
-  //   width: auto;
-  // }
   .choose-us-card {
     height: 30vh;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .cards {
-    margin-top: -12rem;
+  p {
+    font-size: 0.4rem;
+    line-height: 1rem;
   }
   form {
     text-align: left;
   }
+
+  .cards {
+    margin-top: -15rem;
+  }
+  .welcome {
+    padding-left: 1rem;
+  }
+  .welcome-text {
+    width: 100%;
+  }
+  .our-yachts-waves {
+    display: none;
+  }
   .contact-form {
     margin-left: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .luxury p,
+  .explore {
+    font-size: 0.8rem;
+  }
+
+  .welcome {
+    padding-right: 1rem;
+  }
+  .cards p {
+    font-size: 0.6rem;
+  }
+  .contact-form {
+    margin-left: 1rem;
+  }
+  footer {
+    padding-left: 1rem;
+  }
+  .copyright {
+    padding-left: 2rem;
   }
 }
