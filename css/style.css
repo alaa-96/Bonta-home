@@ -462,6 +462,12 @@ footer p {
   .lower-waves {
     margin-top: -3px;
   }
+  .welcome {
+    height: 50vh;
+  }
+  .cards {
+    margin-top: -15rem;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -469,7 +475,7 @@ footer p {
     font-size: 15px;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
   p {
     font-size: 1rem;
@@ -478,7 +484,10 @@ footer p {
     font-size: 0.8rem;
   }
   .luxury-txt p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .luxury-txt {
+    width: 50vw;
   }
   .header-icon {
     font-size: 1rem;
@@ -496,7 +505,7 @@ footer p {
     height: 50vh;
   }
   .cards {
-    margin-top: -18rem;
+    margin-top: -20rem;
   }
   .choose-us {
     padding-top: 8rem;
@@ -532,7 +541,7 @@ footer p {
     margin-bottom: 1rem;
   }
   .nav-item:hover {
-    background-position: 2em 2.4em;
+    background-position: 0.5em 2em;
   }
   .upper-waves {
     margin-top: -5px;
@@ -569,10 +578,10 @@ footer p {
     padding-top: 10rem;
   }
   .cards {
-    margin-top: -15rem;
+    margin-top: -17rem;
   }
   .card {
-    height: 30vh;
+    height: 40vh;
   }
   .choose-us {
     padding-top: 10rem;
@@ -581,6 +590,22 @@ footer p {
 }
 
 @media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .explore {
+    font-size: 1.5rem;
+  }
+  .luxury {
+    background-position: 40%;
+  }
+  p,
+  .luxury p {
+    font-size: 1rem;
+  }
+  .p-heading {
+    font-size: 1.5rem;
+  }
   .welcome {
     height: 60vh;
   }
@@ -628,6 +653,9 @@ footer p {
     height: 20%;
   }
   .luxury {
+    background-position: 30%;
+  }
+  .luxury {
     padding-top: 5rem;
   }
   .luxury-txt {
@@ -643,7 +671,7 @@ footer p {
     height: 10%;
   }
   .cards {
-    margin-top: -17rem;
+    margin-top: -12rem;
   }
   .keep-updated-heading {
     margin-top: 0.6rem;
@@ -777,6 +805,9 @@ footer p {
 @media screen and (max-width: 768px) {
   header {
     width: 90%;
+  }
+  .luxury {
+    background-position: 20%;
   }
 }
 
