@@ -52,7 +52,7 @@ a {
 
 footer {
   background: #000;
-  height: 30vh;
+  height: 20vh;
   padding-top: 4rem;
   text-align: center;
   color: white;
@@ -506,6 +506,79 @@ footer p {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 25px;
+  }
+  header {
+    width: 80%;
+  }
+  p,
+  .header-icon {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h6 {
+    font-size: 2rem;
+  }
+  .lang {
+    height: 1.1rem;
+  }
+  .nav-item {
+    margin-left: 1rem;
+  }
+  .upper {
+    margin-bottom: 1rem;
+  }
+  .nav-item:hover {
+    background-position: 2em 2.4em;
+  }
+  .luxury-txt p {
+    font-size: 2rem;
+  }
+  .explore {
+    font-size: 2rem;
+  }
+  .lower-waves {
+    margin-top: -50px;
+  }
+  .p-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .welcome {
+    width: 70%;
+    height: 60vh;
+  }
+  .welcome-img {
+    width: 50%;
+  }
+  .heading-img {
+    height: 2rem;
+  }
+  .welcome-btn {
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.3rem;
+  }
+  .our-yachts {
+    padding-top: 10rem;
+  }
+  .cards {
+    margin-top: -20rem;
+  }
+  .card {
+    height: 30vh;
+  }
+  .choose-us {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .welcome {
     height: 60vh;
@@ -538,22 +611,36 @@ footer p {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+  header {
+    width: 90%;
+  }
   footer {
     padding-top: 2rem;
   }
-  .lower-waves {
-    margin-top: -30px;
+  h1 {
+    font-size: 3rem;
   }
-  .choose-us {
-    padding-bottom: 3rem;
-    height: auto;
+  .luxury-waves {
+    height: 25%;
+  }
+  .luxury-txt {
+    width: 40%;
+  }
+  .luxury-txt p {
+    font-size: 1.5rem;
+  }
+  .explore {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    width: auto;
   }
 }
 
 @media screen and (max-width: 991px) {
-  header {
-    width: 80%;
-  }
   .cards-grid-container {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -566,45 +653,43 @@ footer p {
   .choose-us-card {
     width: 30vw;
   }
+  .choose-us {
+    padding-bottom: 3rem;
+    height: auto;
+  }
   .upper-waves,
   .lower-waves {
     display: none;
+  }
+  .luxury {
+    background-position: 20%;
+    padding-top: 15rem;
+  }
+  .luxury-txt {
+    width: 60%;
+  }
+  .welcome {
+    width: 100%;
+    padding: 3rem;
+    padding-top: 10rem;
+  }
+  .welcome-text {
+    width: 50%;
+  }
+  .our-yachts-waves {
+    height: 10%;
+  }
+  .cards {
+    margin-top: -25rem;
+  }
+  .choose-us-card {
+    height: 20vh;
   }
 }
 
 @media screen and (max-width: 768px) {
   header {
     width: 90%;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-  .luxury-txt p {
-    font-size: 1.5rem;
-  }
-  .luxury {
-    background-position: 20%;
-    padding-top: 15rem;
-  }
-  .luxury-waves {
-    height: 20%;
-  }
-  .luxury-txt {
-    width: 60%;
-  }
-  .explore {
-    font-size: 1.5rem;
-  }
-  .welcome {
-    width: 100%;
-    padding: 3rem;
-    margin-bottom: 2rem;
-  }
-  .welcome-text {
-    width: 50%;
-  }
-  .our-yachts-waves {
-    height: 15%;
   }
 }
 
@@ -764,13 +849,24 @@ footer p {
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 540px) {
   .luxury {
     background-position: 15%;
+    padding-top: 3rem;
   }
   .cards {
     right: 2%;
     margin-top: -20rem;
+  }
+  .explore,
+  .luxury-txt p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .luxury {
+    padding-top: 8rem;
   }
 }
 
@@ -783,7 +879,7 @@ footer p {
   }
   .cards {
     right: 2%;
-    margin-top: -22rem;
+    margin-top: -18rem;
   }
   .choose-us-card {
     height: 20vh;
@@ -811,6 +907,18 @@ footer p {
   }
   .choose-us-card {
     height: 30vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cards {
+    margin-top: -12rem;
+  }
+  form {
+    text-align: left;
+  }
+  .contact-form {
+    margin-left: 2.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
