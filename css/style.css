@@ -15,11 +15,9 @@ body {
 }
 
 header {
-  width: 70%;
-  height: 15vh;
-  margin-top: 6vh !important;
+  margin-top: 2rem !important;
   margin: auto;
-  margin-bottom: 2vh;
+  margin-bottom: 1rem;
   color: #000;
 }
 
@@ -55,12 +53,9 @@ a {
 
 footer {
   background: #000;
-  height: 20vh;
   padding-top: 4rem;
   padding-bottom: 2rem;
-  text-align: center;
   color: #ffffff;
-  height: auto;
 }
 
 footer p {
@@ -68,8 +63,12 @@ footer p {
   margin-bottom: 0%;
 }
 
-.logo img {
-  width: 18vw;
+.logo-img {
+  width: 60%;
+}
+
+.container {
+  width: 60%;
 }
 
 .nav-item,
@@ -77,10 +76,8 @@ footer p {
   font-weight: 300;
 }
 
-.nav-item:hover {
-  background: url("../imgs/Path 2812.svg") no-repeat;
-  background-position: 1em 3em;
-  background-size: 3em 20%;
+.nav-item:hover::after {
+  content: url("../imgs/Path 2812.svg");
 }
 
 .header-icons {
@@ -124,16 +121,9 @@ footer p {
   color: #ffffff;
 }
 
-.fixed-position {
-  position: fixed;
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 .active {
-  height: 100vh;
-  width: 70vw;
+  height: 100%;
+  width: 70%;
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -158,7 +148,6 @@ footer p {
 .active .nav-item {
   display: block !important;
   padding-top: 5rem;
-  height: 12%;
   width: 70%;
   border-bottom: 1px solid #dde8f0;
   border-bottom-width: 70%;
@@ -197,21 +186,18 @@ footer p {
   margin-top: -40px;
 }
 
-.sections {
-  height: 70vh;
-  width: 100%;
-}
-
 .luxury {
   background: -webkit-gradient(linear, left top, right top, from(rgba(4, 4, 8, 0.842)), color-stop(30%, rgba(59, 59, 59, 0.466)), to(rgba(63, 67, 68, 0.178))), url("../imgs/NoPath1.svg") center/cover no-repeat;
   background: linear-gradient(90deg, rgba(4, 4, 8, 0.842) 0%, rgba(59, 59, 59, 0.466) 30%, rgba(63, 67, 68, 0.178) 100%), url("../imgs/NoPath1.svg") center/cover no-repeat;
   background-position: left;
-  padding-top: 10%;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 .luxury-waves {
-  height: 30%;
-  margin: 2% 5vw auto 0%;
+  height: 6rem;
+  position: absolute;
+  left: 0%;
 }
 
 .luxury-txt {
@@ -230,16 +216,19 @@ footer p {
 }
 
 .explore:hover {
-  background: url("../imgs/Path 2811.svg") no-repeat;
-  background-position: -1em 1.5em;
-  background-size: 70% 7%;
   color: #707070;
 }
 
+.explore:hover::after {
+  content: url("../imgs/Path 2811.svg");
+  position: relative;
+  top: 1em;
+  right: 50%;
+}
+
 .welcome {
-  width: 60vw;
-  margin: auto;
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .welcome h3,
@@ -265,19 +254,18 @@ footer p {
 }
 
 .welcome-btn {
-  width: 7rem;
-  height: 2.5rem;
   margin-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .welcome-img {
   background: url("../imgs/Harris 2021 Catalog-Image-068.svg") center/cover no-repeat;
-  height: 60%;
-  width: 25vw;
+  width: 40%;
 }
 
 .welcome-img-waves {
-  height: 6vh;
+  height: 18%;
   position: relative;
   margin-left: -20px;
   margin-top: 30px;
@@ -289,7 +277,7 @@ footer p {
   background-position: 10%;
   text-align: center;
   padding-top: 5rem;
-  height: 55vh;
+  height: 25rem;
 }
 
 .our-yachts-waves {
@@ -313,16 +301,12 @@ footer p {
 }
 
 .cards {
-  position: relative;
-  right: -18%;
   margin-top: -10rem;
   padding-bottom: 3rem;
-  max-width: 65vw;
-  height: auto;
 }
 
 .card {
-  height: 16rem;
+  padding-top: 17rem;
   margin: 0.3rem;
   border-radius: 0%;
 }
@@ -382,21 +366,17 @@ footer p {
   margin-bottom: 0.3rem;
 }
 
-.empty-section {
-  height: 25vh;
-}
-
 .choose-us {
   background: #f2f2f2;
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 4rem;
-  height: auto;
 }
 
 .choose-us-card {
-  height: 43vh;
-  width: 20vw;
+  width: 32%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background: #ffffff;
 }
 
@@ -406,17 +386,9 @@ footer p {
 }
 
 .keep-updated {
-  height: 25vh;
   text-align: center;
-  padding-top: 3rem;
-}
-
-.contact-form {
-  margin-left: 5vw;
-}
-
-.keep-updated-heading {
-  margin-right: 4vw;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .btn-dark {
@@ -441,8 +413,7 @@ footer p {
 }
 
 .form-control {
-  height: 2.5rem;
-  width: 20vw;
+  padding: 0.5rem;
 }
 
 .subscribe-btn {
@@ -465,9 +436,6 @@ footer p {
   .lower-waves {
     margin-top: -3px;
   }
-  .welcome {
-    height: 60vh;
-  }
   .cards {
     margin-top: -15rem;
   }
@@ -489,9 +457,6 @@ footer p {
   .luxury-txt p {
     font-size: 1.2rem;
   }
-  .luxury-txt {
-    width: 50vw;
-  }
   .header-icon {
     font-size: 1rem;
   }
@@ -503,9 +468,6 @@ footer p {
   }
   .nav-item:hover {
     background-position: 1em 2.5em;
-  }
-  .welcome {
-    height: 50vh;
   }
   .cards {
     margin-top: -20rem;
@@ -562,29 +524,17 @@ footer p {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
-  .welcome {
-    width: 70%;
-    height: 60vh;
-  }
   .welcome-img {
     width: 50%;
   }
   .heading-img {
     height: 2rem;
   }
-  .welcome-btn {
-    height: 4rem;
-    width: 10rem;
-    font-size: 1.3rem;
-  }
   .our-yachts {
     padding-top: 10rem;
   }
   .cards {
     margin-top: -17rem;
-  }
-  .card {
-    height: 40vh;
   }
   .choose-us {
     padding-top: 10rem;
@@ -609,9 +559,6 @@ footer p {
   .heading {
     font-size: 1.5rem;
   }
-  .welcome {
-    height: 60vh;
-  }
   .cards {
     margin-top: -20rem;
   }
@@ -631,9 +578,6 @@ footer p {
   .welcome {
     width: 80%;
   }
-  .welcome-img {
-    width: 35vw;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -651,9 +595,6 @@ footer p {
   }
   .nav-item:hover {
     background-position: 0.7em 2.5em;
-  }
-  .luxury-waves {
-    height: 20%;
   }
   .luxury {
     background-position: 30%;
@@ -688,12 +629,6 @@ footer p {
   p {
     font-size: 1rem;
   }
-  .cards-grid-item {
-    width: 50vw;
-  }
-  .choose-us-card {
-    width: 30vw;
-  }
   .choose-us {
     padding-bottom: 3rem;
     height: auto;
@@ -710,11 +645,6 @@ footer p {
   }
   .heading {
     font-size: 2rem;
-  }
-  .welcome-btn {
-    height: 4rem;
-    width: 8rem;
-    font-size: 1.1rem;
   }
   .welcome {
     padding-top: 10rem;
@@ -733,10 +663,6 @@ footer p {
   }
   .cards {
     margin-top: -35rem;
-    width: 50vw;
-  }
-  .choose-us-card {
-    height: 25vh;
   }
   .keep-updated {
     padding-top: 10rem;
@@ -761,9 +687,6 @@ footer p {
   .cards {
     margin-top: -25rem;
   }
-  .choose-us-card {
-    height: 20vh;
-  }
   .keep-updated {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -786,19 +709,11 @@ footer p {
   .keep-updated-btns {
     margin-top: 1rem;
   }
-  .form-control {
-    width: 50vw;
-  }
 }
 
 @media screen and (max-width: 820px) {
   .welcome {
     height: auto;
-  }
-  .welcome-btn {
-    height: 2rem;
-    width: 5rem;
-    font-size: 0.6rem;
   }
   .contact-form {
     margin-left: 4rem;
@@ -816,7 +731,6 @@ footer p {
 
 @media screen and (max-width: 640px) {
   header {
-    height: 10vh;
     width: 100%;
   }
   h1 {
@@ -837,9 +751,7 @@ footer p {
   header a {
     color: #dde8f0 !important;
   }
-  .logo img {
-    height: 10vh;
-    width: 50vw;
+  .logo-img {
     position: absolute;
     right: 25%;
   }
@@ -875,7 +787,6 @@ footer p {
     margin: 2rem 2rem 3rem -10px;
   }
   .luxury {
-    height: 50vh;
     background-position: 0%;
     background-size: cover;
   }
@@ -905,9 +816,6 @@ footer p {
     width: 5rem;
     margin-top: -4rem;
   }
-  .cards-grid-item {
-    width: 90vw;
-  }
   .cards {
     right: 0%;
     margin-top: -12rem;
@@ -930,7 +838,6 @@ footer p {
   }
   .choose-us-card {
     width: 60%;
-    height: 40vh;
     margin: auto;
   }
   .footer-logo {
@@ -978,9 +885,6 @@ footer p {
     right: 0%;
     margin-top: -22rem;
   }
-  .choose-us-card {
-    height: 20vh;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1001,9 +905,6 @@ footer p {
   }
   .cards {
     margin-top: -16rem;
-  }
-  .choose-us-card {
-    height: 30vh;
   }
 }
 

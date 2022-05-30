@@ -28,120 +28,120 @@
   </head>
   <body>
     <header class="d-flex flex-row justify-content-between">
-      <!-- header logo img -->
-      <div class="logo">
-        <img src="./imgs/Logo.svg" alt="" />
-      </div>
-
-      <!-- contact info and navbar -->
-      <!-- contact info and languages -->
-      <div class="right">
-        <div class="upper d-flex justify-content-end me-1">
-          <div class="inline-flex flex-row">
-            <a href="#" class="header-icons wa">
-              <i class="fa-brands header-icon fa-whatsapp"></i>
-              <a class="tel" href="tel:+20 115 100 7736">+20 115 100 7736</a>
-            </a>
-          </div>
-          <div class="d-inline-block">
-            <a href="#" class="header-icons fb">
-              <i class="fa-brands header-icon fa-facebook-f"></i>
-            </a>
-          </div>
-          <div class="d-inline-block">
-            <a href="#" class="header-icons instagram">
-              <i class="fa-brands header-icon fa-instagram"></i>
-            </a>
-          </div>
-          <div class="lang-container d-inline-flex flex-row">
-            <a href="#">
-              <img
-                class="icon lang english-lang"
-                src="./imgs/Group 1077.svg"
-                alt=""
-              />
-            </a>
-            <div class="dropdown d-inline-block">
-              <button
-                class="btn p-0 m-0 ms-2"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">German</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Arabic</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div class="container d-flex flex-row justify-content-between">
+        <!-- header logo img -->
+        <div>
+          <img class="logo-img" src="./imgs/Logo.svg" alt="" />
         </div>
 
-        <!-- navbar and hamburger menu -->
-        <div class="lower">
-          <i class="hamburger fas fa-bars"></i>
-          <i class="close fa-solid fa-xmark"></i>
+        <!-- contact info and navbar -->
 
-          <nav>
-            <ul class="navbar-nav d-flex flex-row me-auto mb-2 mb-lg-0">
-              <li class="nav-item p-1">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item fleet p-1 d-inline-flex flex-row">
-                <a class="nav-link d-inline" aria-current="page" href="#"
-                  >Fleet</a
+        <div>
+          <div class="upper d-flex justify-content-end me-1">
+            <div class="inline-flex flex-row">
+              <a href="#" class="header-icons">
+                <i class="fa-brands header-icon fa-whatsapp"></i>
+                <a class="tel" href="tel:+20 115 100 7736">+20 115 100 7736</a>
+              </a>
+            </div>
+            <div class="d-inline-block">
+              <a href="#" class="header-icons">
+                <i class="fa-brands header-icon fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="d-inline-block">
+              <a href="#" class="header-icons instagram">
+                <i class="fa-brands header-icon fa-instagram"></i>
+              </a>
+            </div>
+            <div class="lang-container d-inline-flex flex-row">
+              <a href="#">
+                <img class="lang" src="./imgs/Group 1077.svg" alt="" />
+              </a>
+              <div class="dropdown d-inline-block">
+                <button
+                  class="btn p-0 m-0 ms-2"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                <div class="dropdown d-inline">
-                  <button
-                    class="btn p-0"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">German</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Arabic</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- navbar and hamburger menu -->
+          <div>
+            <i class="hamburger fas fa-bars"></i>
+            <i class="close fa-solid fa-xmark"></i>
+
+            <nav>
+              <ul class="navbar-nav d-flex flex-row me-auto mb-2 mb-lg-0">
+                <li class="nav-item p-1">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item fleet p-1 d-inline-flex flex-row">
+                  <a class="nav-link d-inline" aria-current="page" href="#"
+                    >Fleet</a
                   >
-                    <i class="fa-solid fa-caret-down"></i>
-                  </button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
+                  <div class="dropdown d-inline">
+                    <button
+                      class="btn p-0"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item text-dark" href="#">Boat 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-dark" href="#">Boat 2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-dark" href="#">Boat 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Attractions</a
                   >
-                    <li>
-                      <a class="dropdown-item text-dark" href="#">Boat 1</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-dark" href="#">Boat 2</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item text-dark" href="#">Boat 3</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item p-1">
-                <a class="nav-link" aria-current="page" href="#">Attractions</a>
-              </li>
-              <li class="nav-item p-1">
-                <a class="nav-link" aria-current="page" href="#our-yachts"
-                  >Gallery</a
-                >
-              </li>
-              <li class="nav-item p-1">
-                <a class="nav-link" aria-current="page" href="#about-us"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item p-1">
-                <a class="nav-link" aria-current="page" href="#contact"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </nav>
+                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link" aria-current="page" href="#our-yachts"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link" aria-current="page" href="#about-us"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item p-1">
+                  <a class="nav-link" aria-current="page" href="#contact"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -149,43 +149,47 @@
     <main>
       <!-- First section -->
       <div class="upper-waves"><img src="./imgs/Path 2815.svg" alt="" /></div>
-      <div class="luxury d-flex flex-row sections">
+      <div class="luxury d-flex flex-row">
         <img class="luxury-waves" src="./imgs/Group 1137.svg" alt="" />
-        <div class="luxury-txt">
-          <p>Lorem, ipsum.</p>
-          <h1>Luxury Boat Rental</h1>
-          <h4><a class="explore" href="#">Explore now</a></h4>
+        <div class="container">
+          <div class="luxury-txt">
+            <p>Lorem, ipsum.</p>
+            <h1>Luxury Boat Rental</h1>
+            <h4><a class="explore" href="#">Explore now</a></h4>
+          </div>
         </div>
       </div>
       <div class="lower-waves"><img src="./imgs/Path 2821.svg" alt="" /></div>
 
       <!-- Second section -->
-      <div class="welcome sections d-flex flex-row justify-content-between">
-        <div class="welcome-text welcome-section">
-          <h2 class="heading">
-            <img class="heading-img" src="./imgs/Group 1078.svg" alt="" />
-            Welcome to Bontá Yachting
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, csadipscing
-            elitr, sed diam nonumy eirmod tempor
-          </p>
-          <button type="button" class="welcome-btn btn btn-dark">
-            About us
-          </button>
-        </div>
-        <div class="welcome-img welcome-section">
-          <img class="welcome-img-waves" src="./imgs/Group 1080.svg" alt="" />
+      <div class="container">
+        <div class="welcome d-flex flex-row justify-content-between">
+          <div class="welcome-text">
+            <h2 class="heading">
+              <img class="heading-img" src="./imgs/Group 1078.svg" alt="" />
+              Welcome to Bontá Yachting
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, csadipscing elitr, sed diam nonumy eirmod tempor
+            </p>
+            <button type="button" class="welcome-btn btn btn-dark">
+              About us
+            </button>
+          </div>
+          <div class="welcome-img">
+            <img class="welcome-img-waves" src="./imgs/Group 1080.svg" alt="" />
+          </div>
         </div>
       </div>
       <!-- <div class="upper-waves"></div> -->
       <div class="upper-waves"><img src="./imgs/Path 2815.svg" alt="" /></div>
 
-      <div id="our-yachts" class="our-yachts sections">
+      <div id="our-yachts" class="our-yachts">
         <h2 class="heading text-light">
           <img class="heading-img" src="./imgs/Group 1079.svg" alt="" /> Our
           yachts
@@ -195,7 +199,7 @@
       <!-- <div class="lower-waves"></div> -->
       <div class="lower-waves"><img src="./imgs/Path 2821.svg" alt="" /></div>
 
-      <div class="cards sections">
+      <div class="cards container">
         <div class="grid-container cards-grid-container">
           <div class="cards-grid-item">
             <div class="card harris">
@@ -288,41 +292,43 @@
       <!-- <div class="upper-waves"></div> -->
       <div class="upper-waves"><img src="./imgs/Path 2815.svg" alt="" /></div>
 
-      <div id="about-us" class="choose-us sections">
-        <h2 class="heading">
-          <img class="heading-img" src="./imgs/Group 1078.svg" alt="" /> Why to
-          choose us
-        </h2>
-        <div class="choose-us-cards d-flex flex-row justify-content-center">
-          <div
-            class="choose-us-card d-flex flex-column justify-content-center m-2"
-          >
-            <img
-              class="choose-us-card-icon"
-              src="./imgs/icon-boat-4277241.svg"
-              alt=""
-            />
-            <h3>Unique Boats</h3>
-          </div>
-          <div
-            class="choose-us-card d-flex flex-column justify-content-center m-2"
-          >
-            <img
-              class="choose-us-card-icon"
-              src="./imgs/icon-best-price-4339937.svg"
-              alt=""
-            />
-            <h3>Best Price</h3>
-          </div>
-          <div
-            class="choose-us-card d-flex flex-column justify-content-center m-2"
-          >
-            <img
-              class="choose-us-card-icon"
-              src="./imgs/icon-happy-1820913.svg"
-              alt=""
-            />
-            <h3>Happy Clients</h3>
+      <div id="about-us" class="choose-us">
+        <div class="container">
+          <h2 class="heading">
+            <img class="heading-img" src="./imgs/Group 1078.svg" alt="" /> Why
+            to choose us
+          </h2>
+          <div class="choose-us-cards d-flex flex-row justify-content-between">
+            <div
+              class="choose-us-card d-flex flex-column justify-content-center m-2"
+            >
+              <img
+                class="choose-us-card-icon"
+                src="./imgs/icon-boat-4277241.svg"
+                alt=""
+              />
+              <h3>Unique Boats</h3>
+            </div>
+            <div
+              class="choose-us-card d-flex flex-column justify-content-center m-2"
+            >
+              <img
+                class="choose-us-card-icon"
+                src="./imgs/icon-best-price-4339937.svg"
+                alt=""
+              />
+              <h3>Best Price</h3>
+            </div>
+            <div
+              class="choose-us-card d-flex flex-column justify-content-center m-2"
+            >
+              <img
+                class="choose-us-card-icon"
+                src="./imgs/icon-happy-1820913.svg"
+                alt=""
+              />
+              <h3>Happy Clients</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -330,7 +336,9 @@
       <div class="lower-waves"><img src="./imgs/Path 2821.svg" alt="" /></div>
 
       <!-- Fourth section -->
-      <div class="keep-updated d-flex flex-row justify-content-center">
+      <div
+        class="keep-updated d-flex flex-row justify-content-between container"
+      >
         <h2 class="heading keep-updated-heading">
           <img class="heading-img" src="./imgs/Group 1078.svg" alt="" /> Always
           keep updated
@@ -369,8 +377,8 @@
     </main>
 
     <!-- Footer -->
-    <footer id="contact display-flex flex-row">
-      <div class="display-flex flex-row mt-3">
+    <footer id="contact">
+      <div class="container justify-content-between d-flex flex-row mt-3">
         <div class="d-inline-block footer-logo-container me-5">
           <img class="footer-logo mt-4" src="./imgs/Logo White.svg" alt="" />
         </div>
