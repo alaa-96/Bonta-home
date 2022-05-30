@@ -24,7 +24,6 @@ header {
 }
 
 h1,
-h3,
 h5 {
   color: #ffffff;
 }
@@ -33,6 +32,10 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 0.1px;
+}
+
+h3 {
+  font-size: 15px;
 }
 
 p {
@@ -249,7 +252,7 @@ footer p {
   width: 45%;
 }
 
-.p-heading {
+.heading {
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
@@ -492,7 +495,7 @@ footer p {
   .header-icon {
     font-size: 1rem;
   }
-  .p-heading {
+  .heading {
     font-size: 1.3rem;
   }
   .explore {
@@ -555,7 +558,7 @@ footer p {
   .explore {
     font-size: 2rem;
   }
-  .p-heading {
+  .heading {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
@@ -603,7 +606,7 @@ footer p {
   .luxury p {
     font-size: 1rem;
   }
-  .p-heading {
+  .heading {
     font-size: 1.5rem;
   }
   .welcome {
@@ -705,7 +708,7 @@ footer p {
   .welcome-text {
     width: 70%;
   }
-  .p-heading {
+  .heading {
     font-size: 2rem;
   }
   .welcome-btn {
@@ -745,7 +748,7 @@ footer p {
   .luxury-txt {
     width: 60%;
   }
-  .p-heading {
+  .heading {
     font-size: 1.5rem;
   }
   .welcome {
@@ -886,7 +889,7 @@ footer p {
   .welcome-text {
     width: 100%;
   }
-  .p-heading {
+  .heading {
     font-size: 1rem;
   }
   .welcome-img {
@@ -990,7 +993,7 @@ footer p {
   .luxury {
     padding-top: 5rem;
   }
-  .p-heading {
+  .heading {
     font-size: 1.1rem;
   }
   .our-yachts-waves {
